@@ -3,275 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LFC Services - Soluções em Tecnologia</title>
+    <title>LFC Services - Elétrica Profissional</title>
     <style>
-        /* Reset e estilos globais */
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
             color: #333;
-            line-height: 1.6;
         }
         
-        /* Cabeçalho */
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: #003366;
             color: white;
-            padding: 1rem 0;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .logo {
-            width: 150px;
-            height: auto;
+            padding: 2rem 0;
         }
         
         nav {
-            display: flex;
-            justify-content: center;
+            background: #FF6600;
             padding: 1rem;
-            background-color: #142850;
+            text-align: center;
         }
         
         nav a {
             color: white;
             text-decoration: none;
-            padding: 0.5rem 1.5rem;
-            margin: 0 0.5rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        
-        nav a:hover {
-            background-color: #27496d;
-        }
-        
-        /* Conteúdo principal */
-        .hero {
-            background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.6);
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            padding: 2rem;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #00a8cc;
-            color: white;
-            padding: 0.8rem 1.8rem;
-            text-decoration: none;
-            border-radius: 5px;
+            margin: 0 15px;
             font-weight: bold;
-            transition: background-color 0.3s;
         }
         
-        .btn:hover {
-            background: #0088aa;
-        }
-        
-        /* Seções */
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+            width: 90%;
+            max-width: 1000px;
+            margin: 2rem auto;
         }
         
-        section {
-            padding: 4rem 0;
+        .servico {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
         }
         
-        section h2 {
-            text-align: center;
-            margin-bottom: 3rem;
-            font-size: 2rem;
-            color: #142850;
-        }
-        
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-icon {
-            font-size: 3rem;
-            color: #00a8cc;
-            margin-bottom: 1rem;
-        }
-        
-        /* Rodapé */
         footer {
-            background: #142850;
+            background: #003366;
             color: white;
             text-align: center;
             padding: 2rem 0;
             margin-top: 2rem;
         }
         
-        .social-links {
-            margin: 1rem 0;
-        }
-        
-        .social-links a {
+        .whatsapp {
+            background: #25D366;
             color: white;
-            margin: 0 0.5rem;
-            font-size: 1.5rem;
-        }
-        
-        /* Responsividade */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            nav a {
-                margin: 0.3rem 0;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="LFC Services Logo" class="logo">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Serviços</a>
-            <a href="#about">Sobre Nós</a>
-            <a href="#contact">Contato</a>
-        </nav>
+        <h1>LFC Services</h1>
+        <p>Elétrica Predial - Residencial - Industrial - Manutenção</p>
     </header>
     
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Soluções Tecnológicas para o Seu Negócio</h1>
-            <p>Oferecemos serviços de TI personalizados para ajudar sua empresa a crescer na era digital.</p>
-            <a href="#contact" class="btn">Fale Conosco</a>
-        </div>
-    </section>
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
     
-    <section id="services">
-        <div class="container">
+    <div class="container">
+        <section id="servicos">
             <h2>Nossos Serviços</h2>
-            <div class="services">
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites e sistemas web personalizados para atender às necessidades do seu negócio.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Aplicativos Mobile</h3>
-                    <p>Desenvolvimento de aplicativos iOS e Android para expandir sua presença digital.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Soluções em nuvem para armazenamento seguro e escalável dos seus dados.</p>
-                </div>
+            
+            <div class="servico">
+                <h3>Elétrica Predial</h3>
+                <p>Instalações e manutenções em edificações comerciais e condomínios.</p>
             </div>
-        </div>
-    </section>
-    
-    <section id="about" style="background-color: #e8f4f8;">
-        <div class="container">
+            
+            <div class="servico">
+                <h3>Elétrica Residencial</h3>
+                <p>Soluções completas para sua casa, desde reformas até reparos emergenciais.</p>
+            </div>
+            
+            <div class="servico">
+                <h3>Elétrica Industrial</h3>
+                <p>Instalação e manutenção de sistemas elétricos industriais.</p>
+            </div>
+        </section>
+        
+        <section id="sobre">
             <h2>Sobre Nós</h2>
-            <p>A LFC Services é uma empresa especializada em soluções tecnológicas, fundada em 2010. Nossa missão é fornecer serviços de TI de alta qualidade que impulsionem o crescimento dos nossos clientes.</p>
-            <p>Com uma equipe de profissionais experientes e certificados, estamos prontos para enfrentar os desafios mais complexos do mundo digital.</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <form style="max-width: 600px; margin: 0 auto;">
-                <div style="margin-bottom: 1rem;">
-                    <label for="name" style="display: block; margin-bottom: 0.5rem;">Nome:</label>
-                    <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
-                </div>
-                <div style="margin-bottom: 1rem;">
-                    <label for="email" style="display: block; margin-bottom: 0.5rem;">Email:</label>
-                    <input type="email" id="email" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
-                </div>
-                <div style="margin-bottom: 1rem;">
-                    <label for="message" style="display: block; margin-bottom: 0.5rem;">Mensagem:</label>
-                    <textarea id="message" rows="5" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+            <p>A LFC Services é especializada em soluções elétricas, com profissionais qualificados e experiência no mercado.</p>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato para orçamentos e atendimento:</p>
+            <p><strong>WhatsApp:</strong> (11) 98448-0962</p>
+            <p><strong>Email:</strong> luislaf100@gmail.com</p>
+            
+            <a href="https://wa.me/5511984480962" class="whatsapp">
+                Falar no WhatsApp
+            </a>
+        </section>
+    </div>
     
     <footer>
-        <div class="container">
-            <p>&copy; 2023 LFC Services. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            <p>contato@lfcservices.com.br | (11) 1234-5678</p>
-        </div>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> LFC Services</p>
     </footer>
-    
-    <!-- Font Awesome para ícones -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
